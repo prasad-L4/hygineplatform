@@ -136,15 +136,15 @@ nav{
     width: 380px;
     height: 26rem;
     padding: 20px;
-    background-color: #2b3d6f; /* Blue background */
-    color: #f0ffe8; /* Light text color */
+    background-color: #2b3d6f; 
+    color: #f0ffe8; 
     border-radius: 35px;
     overflow: visible; 
-    /* Allow the arrow to overflow outside */
+   
   }
   
   .content {
-    z-index: 2; /* Ensure content is above the arrow */
+    z-index: 2; 
   }
   .card span{
     color: #c8f0b8;
@@ -162,8 +162,8 @@ nav{
   }
   
   .cta-button {
-    background-color: #c8f0b8; /* Light green button */
-    color: #2a3b68; /* Button text color */
+    background-color: #c8f0b8; 
+    color: #2a3b68; 
     border: none;
     padding: 10px 20px;
     border-radius: 30px;
@@ -173,15 +173,15 @@ nav{
   }
   
   .cta-button:hover {
-    background-color: #a7ddb1; /* Slightly darker on hover */
+    background-color: #a7ddb1; 
   }
   
   
   .arrow {
-    position: absolute; /* Position it outside the normal flow */
-    right: -55.2px; /* Move it outside the card */
-    top: 50%; /* Vertically center the arrow */
-    transform: translateY(-50%); /* Adjust vertical positioning */
+    position: absolute; 
+    right: -55.2px; 
+    top: 50%; 
+    transform: translateY(-50%); 
   }
   
   .arrow img {
@@ -294,7 +294,7 @@ color: #2b3d6f;
 
 .product-cards-main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Default: 4 cards per row */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     padding: 20px;
     align-items: center;
