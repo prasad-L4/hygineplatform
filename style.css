@@ -56,7 +56,14 @@ header{
     width: 1.6rem;
     height: 1.6rem;
 border-radius: 50px;
+transition: color 0.3s ease, transform 0.3s ease; 
     
+}
+.header-input button:hover {
+  background-color: #2a3b68;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
 }
 .header-icons{
     display: flex;
@@ -64,6 +71,19 @@ border-radius: 50px;
     padding-right: 15px;
     justify-content: center;
     align-items: center;
+  
+}
+.header-icons span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-icons span:hover{
+  background-color: white;
+  color: #2b3d6f;
+ width: 23px;
+ height: 23px;
+ border-radius: 50px;
 }
 /* navabr */
 nav{
@@ -92,7 +112,7 @@ nav{
 }
 .nav-btns{
     display: flex;
-    gap: 10px;
+    gap: 17px;
     color: #2a3b68;
 
 }
@@ -101,12 +121,19 @@ nav{
     font-weight: 600;
 
 }
+.nav-btns button:hover{
+   color: #a7ddb1;
+}
 .nav-icons{
     color: #2a3b68;
     display: flex;
     justify-content: center;
     padding-right: 15px;
     gap: 10px;
+}
+.nav-icons span:hover{
+color: black;
+scale: .8;
 }
 .cards{
     width: 100%;
@@ -173,7 +200,7 @@ nav{
   }
   
   .cta-button:hover {
-    background-color: #a7ddb1; 
+    background-color: #74a37c; 
   }
   
   
@@ -213,7 +240,7 @@ nav{
     align-items: center;
   }
   .card3-first img{
-    width: 7rem;
+    width: 6rem;
     margin-top: 10px;
 
   }
@@ -240,7 +267,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 26px;
 }
 .card3-pr1 div h6{
     font-size: 13px;
@@ -253,6 +280,10 @@ width: 25px;
 height: 25px;
 border-radius: 50px;
 color: #2b3d6f;
+}
+.card3-pr1 button:hover,.card3-pr2 button:hover,.card3-pr4 button:hover,.card3-pr5 button:hover{
+  background-color: #2a3b68;
+  color: white;
 }
 .card3-pr2{
     display: flex;
@@ -306,10 +337,47 @@ color: #2b3d6f;
     width: 100%;
     height: 25rem;
     background-color: #C4CDEC;
+ 
+    border-radius: 30px;
+    
+  }
+  .product-cr{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 30px;
+    margin-top:3rem  ;
+  }
+  .product-card button{
+    margin-top: -13rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: none
+
+  ;
+  }
+  .product-btn{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 3rem;
+  }
+
+  .product-btn button{
+     width: 90%;
+     background: rgb(176, 208, 220);
+     background: linear-gradient(0deg, rgb(88, 102, 107) 0%, rgb(49, 55, 62) 100%);
+     color: white;
+       height: 40px;
+       line-height: 42px;
+       padding: 0;
+       border: none;
+       transition: all 0.4s ease-in-out;
+  }
+  .product-btn button:hover{
+    background: linear-gradient(0deg, rgb(34, 35, 35) 0%, rgb(255, 255, 255) 100%);
+    transform: scale(1.1); 
+    opacity: 0.6; 
   }
   .product-card1 {
     width: 100%;
@@ -344,17 +412,25 @@ color: #2b3d6f;
     gap: 13px;
     color: #2b3d6f;
   }
-  
+  .product-cr button:hover{
+    background-color: #2a3b68;
+    color: white;
+
+  }
   .pr-card div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
+
+
+ 
   }
   .pr-card p{
     font-size: 20px;
   }
   .pr-card h3 {
-    font-size: 28px;
+    font-size: 30px;
   }
   
   .pr-card img {
@@ -362,9 +438,10 @@ color: #2b3d6f;
     height: 35px;
   }
   
-  .pr-img {
-    display: flex;
-    flex-direction: column-reverse;
+  .pr-img img {
+ height: 14rem;
+ margin-top: 2rem;
+  
   }
   
 
@@ -389,12 +466,20 @@ gap:20px;
     border-radius: 30px;
     background-color: #C4CDEB;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+   
 
   }
+  .btm-card1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+  }
   .btm-card1 img{
-    width: 9rem;
+    width: 8rem;
+  
   }
 .btm-card2{
     background-color: #DCE4F0;
@@ -402,14 +487,40 @@ gap:20px;
     height: 20rem;
     border-radius: 30px;
     display: flex!important;
-    justify-content: space-evenly!important;
+    justify-content: space-between!important;
     align-items: center!important;
     gap: 20px;
+    flex-direction: column;
     
 
 }
+.btm-btn{
+  width: 90%;
+  padding-bottom: 1rem;
+}
+.btm-btn button{
+  width: 100%;
+  background: rgb(176, 208, 220);
+     background: linear-gradient(0deg, rgb(88, 102, 107) 0%, rgb(49, 55, 62) 100%);
+     color: white;
+       height: 40px;
+       line-height: 42px;
+       padding: 0;
+       border: none;
+       transition: all 0.4s ease-in-out;
+       border-radius: 30px;
+}
+.btm-btn button:hover{
+  background: linear-gradient(0deg, rgb(34, 35, 35) 0%, rgb(255, 255, 255) 100%);
+    transform: scale(1.1); 
+    opacity: 0.6; 
+    color: black;
+    font-weight: 600;
+}
 .btm-card2 img{
-    width: 9rem;
+    width: 12rem;
+    height: 14rem;
+    object-fit: contain;
 }
   @media (max-width: 953px) {
     .product-cards-main {
@@ -430,17 +541,7 @@ gap:20px;
       }
   }
 
-  @media (max-width: 480px) {
-    .product-cards-main {
-      grid-template-columns: 1fr;
-    }
-    .card{
-        width: 90%;
-    }
-    .card h1{
-        font-size: 60px;
-    }
-  }
+
   
 @media(max-width:562px){
     /* header */
@@ -504,5 +605,14 @@ gap:20px;
 .header-profile h6{
     font-size: 10px;
 
+}
+.product-cards-main {
+  grid-template-columns: 1fr;
+}
+.card{
+  width: 90%;
+}
+.card h1{
+  font-size: 60px;
 }
 }
